@@ -1,0 +1,78 @@
+<div class="create_newaccount">
+                    <h2><span>create </span>new account</h2>
+                    <div class="box">
+                        <div class="account_info">
+                            <h3>Account Information</h3>
+                            
+                            <div class="Searchform">
+                                <input name="firstname"  ng-model="myform.firstname" type="text" value="First Name" required/>
+                                <input name="lastname" ng-model="myform.lastname" type="text" value="Last Name" required />
+                                <div class="single_option">
+                                    <label> Gender</label>
+                                    <div class="radio_btn">
+                                        <label>
+                                        <input type="radio" ng-model="myform.gender" name="radio" class="styled" checked/>
+                                        male </label>
+                                    </div>
+                                    <div class="radio_btn">
+                                        <label>
+                                        <input type="radio" ng-model="myform.gender" name="radio" class="styled" />
+                                        female </label>
+                                    </div>
+                                </div>
+                                <input name="email" ng-model="myform.email" type="text" value="email" required/>
+                                <input name="username" ng-model="myform.username" type="text" value="Choose user name" required/>
+                                <input name="password"  ng-model="myform.password" type="text" value="Create password" required/>
+                                <input name="cpassword" ng-model="myform.cpassword" type="text" value="Confirm password" required/>
+                                <div class="option">
+                                    <label> DOB</label>
+                                    <span>
+                                    <select name="date" class="changeMe">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                    </span> <span>
+                                    <select name="month" class="changeMe">
+                                        <option>month</option>
+                                        <option>Jan</option>
+                                        <option>feb</option>
+                                    </select>
+                                    </span> <span>
+                                    <select name="year" class="changeMe">
+                                        <option>year</option>
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                    </select>
+                                    </span>
+                                    </div></br>
+                                </div>
+                                <div class="interests">
+                                    <select name="interests" ng-model="myform.interest" class="changeMe" >
+                                        <option >Parties</option>
+                                        <option>Restaurants</option>
+                                        <option>Activities</option>
+                                        <option>Traveling</option>
+                                    </select>
+                                </div>
+                                <div class="question_block">
+                                    <div class="question_box"> <span>3</span> <span>+</span> <span>3</span>
+                                        
+                                    </div></br>
+                                    <div class="total_value">
+                                            <input name="asnwer" ng-model="myform.answer" type="text" class="answer" reuired>
+                                        </div>
+                                    <p class="question_info">This question is for testing wheather your are a human visitor and to prevent automated spam submissions.</p>
+                                </div>
+                                <input type="submit" ng-click="save()" value="Create account" class="createlogin">
+                            
+                            </div>
+                        </div>
+                        <div class="create_account"> <a href="#" class="fb_account">create account using</a>
+                            <p>Already a member?</p>
+                            <a href="#/login" class="login">login</a> </div>
+                    </div>
+               {{message}}
+                </div>
